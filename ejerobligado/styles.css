@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+/* aqui creo mis variables */
+:root{
+    --grafitera:'Julee', cursive;
+    --papiro:#e8dabd;
+    --madera:#804000;
+}
+/* pongo lo que quiero general para todo */
+*{
+    font-family:var(--grafitera),'Times New Roman', Times, serif;
+    color: var(--madera);
+    writing-mode: horizontal-tb;
+    font-size:medium;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    word-wrap: break-word;
+
+
+}
+/* ajusto elbody para darle un efecto de carta */
+body{
+    width: fit-content;
+    max-width: 600px;
+    margin: 25%;
+
+    
+}
+/* añado el borde radius para darle un efecto de pergamino */
+.fondo{
+    background-color: var(--papiro);
+    padding: 30px;
+    border: black 3px solid;
+    border-radius:140px 50px;
+}
+
+p,datalist,dt,dd,ul,li{
+    line-height: 1.6;
+    hyphens: auto;
+    word-spacing: 5px;
+}
+h1{
+    border: 3px var(--madera) solid;
+    display: inline-block;
+    background-color:#f5f5dc;
+    margin-top: 10px;
+}
+h2{
+    border: var(--madera) 3px solid;
+    text-align: center;
+    display: inline-block;
+    background-color: #f5f5dc;
+}
+.dirdr{
+    text-align: right;
+    margin-right: 20px;
+}
+
+.negrita{
+    font-weight: bold;
+}
+.underline{
+    text-decoration: underline;
+}
+.sup{
+vertical-align:super;
+}
+.sub{
+vertical-align: sub;
+}
+h1,h2{
+    margin: 15px;
+    padding: 8px;
+}
+.cursiva{
+    font-style: italic;
+}
+#quote {
+
+    quotes: "''" "*";
+}
